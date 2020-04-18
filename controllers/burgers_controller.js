@@ -28,7 +28,8 @@ router.get("/", function(req, res) {
     var condition = "id = " + req.params.id;
   
     console.log("condition", condition);
-  
+    console.log("Line 34: " + req.body.devoured);
+    
     burger.update({
       devoured: req.body.devoured
     }, condition, function(result) {
