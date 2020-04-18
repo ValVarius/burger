@@ -20,5 +20,10 @@
     "express": "^4.17.1",
     "express-handlebars": "^4.0.3",
     "mysql": "^2.18.1"
+  },
+  "production": {
+    "use_env_variable":"JAWSDB_URL",
+    "dialect": "mysql"
   }
+
 }
